@@ -17,6 +17,7 @@ const router = createRouter({
       path: '/',
       name: APP_ROUTE_NAMES.HOME,
       component: Home,
+      beforeEnter: [isAuthenticated],
     },
     {
       path: '/contact-us',
