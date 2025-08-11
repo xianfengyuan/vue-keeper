@@ -22,7 +22,11 @@
           </div>
         </div>
         <div class="modal-footer">
-          <a href="mailto:hello@sheermountain.com" class="btn btn-success">Contact Us</a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@sheermountain.com&su=Subject&body=Hello%20there"
+            target="_blank"
+            >Contact Us</a
+          >
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
