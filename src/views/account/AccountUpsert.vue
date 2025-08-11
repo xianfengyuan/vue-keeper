@@ -77,7 +77,7 @@ onMounted(async () => {
   } catch (e) {
     console.log(e)
   } finally {
-    loading.value.false
+    loading.value = false
   }
 })
 
