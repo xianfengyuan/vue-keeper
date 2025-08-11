@@ -28,6 +28,6 @@ export default {
 
   async deleteAccount(id) {
     const docRef = doc(db, 'accounts', id)
-    await deleteDoc(id)
+    await deleteDoc(docRef)
   },
 }
