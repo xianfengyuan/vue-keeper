@@ -27,6 +27,14 @@
             <router-link
               class="nav-link active"
               aria-current="page"
+              :to="{ name: APP_ROUTE_NAMES.ACCOUNT_LIST }"
+              >Account</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link
+              class="nav-link active"
+              aria-current="page"
               :to="{ name: APP_ROUTE_NAMES.CONTACT_US }"
               >Contact Us</router-link
             >

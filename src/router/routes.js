@@ -5,8 +5,8 @@ import SignIn from '@/views/auth/SignIn.vue'
 import SignUp from '@/views/auth/SignUp.vue'
 import ContactUs from '@/views/home/ContactUs.vue'
 import Home from '@/views/home/Home.vue'
-import LoginList from '@/views/Login/LoginList.vue'
-import LoginUpsert from '@/views/Login/LoginUpsert.vue'
+import AccountList from '@/views/account/AccountList.vue'
+import AccountUpsert from '@/views/account/AccountUpsert.vue'
 import { APP_ROUTE_NAMES } from '@/constants/routeNames'
 import { useAuthStore } from '@/stores/authStore'
 
@@ -44,21 +44,21 @@ const router = createRouter({
       component: NotFound,
     },
     {
-      path: '/login-list',
-      name: APP_ROUTE_NAMES.LOGIN_LIST,
-      component: LoginList,
+      path: '/account-list',
+      name: APP_ROUTE_NAMES.ACCOUNT_LIST,
+      component: AccountList,
       beforeEnter: [isAdmin],
     },
     {
-      path: '/login-create',
-      name: APP_ROUTE_NAMES.LOGIN_CREATE,
-      component: LoginUpsert,
+      path: '/account-create',
+      name: APP_ROUTE_NAMES.ACCOUNT_CREATE,
+      component: AccountUpsert,
       beforeEnter: [isAdmin],
     },
     {
-      path: '/login-update/:id',
-      name: APP_ROUTE_NAMES.LOGIN_UPDATE,
-      component: LoginUpsert,
+      path: '/account-update/:id',
+      name: APP_ROUTE_NAMES.ACCOUNT_UPDATE,
+      component: AccountUpsert,
       beforeEnter: [isAdmin],
     },
   ],
