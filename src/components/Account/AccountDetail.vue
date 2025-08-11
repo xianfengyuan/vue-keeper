@@ -18,7 +18,7 @@
               <i class="bi bi-tag-fill px-1"></i>
               <span> {{ account.password }}</span>
             </span>
-            <p class="text-muted">{{ product.notes }}</p>
+            <p class="text-muted">{{ account.notes }}</p>
           </div>
         </div>
         <div class="modal-footer">
